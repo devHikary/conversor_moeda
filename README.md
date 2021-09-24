@@ -2,7 +2,7 @@
 Projeto desenvolvido durante a ImersãoDev.
 
 ## Projeto inicial apresentado na aula
-Nesse projeto foi criado utilizando funções em javascript que interage com o usuário exibindo o valor convertido na tela.
+Este projeto foi criado utilizando funções em javascript que interage com o usuário exibindo o valor convertido na tela.
 
 ## ⚡Desafios [🏗️ em desenvolvimento]
 - Adicionar outras moedas para converter.
