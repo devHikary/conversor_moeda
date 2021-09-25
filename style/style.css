@@ -53,6 +53,45 @@ button {
 }
 
 h2 {
+  padding-left: 16px;
   color: #ffffff;
   font-size: 30px;
+}
+
+h3{
+  padding-left: 12px;
+}
+
+aside {
+  width: 216px;
+  height: 150px;
+  left: 16px;
+  top: 16px;
+
+  border-radius: 8px;
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+
+  color: black;
+  background-color: #cacaca;
+  font-size: 12px;
+}
+
+ul{
+  width: 189px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: yellow;
 }
