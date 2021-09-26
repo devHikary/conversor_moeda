@@ -8,14 +8,14 @@ function Converter(){
     elementovalorConvertido.innerHTML = valorConvertido;
     return;
   }
-
+  
   var valorEmDolar = parseFloat(valor)
   console.log(valorEmDolar);
 
-  var valorEmReal = valorEmDolar * 5;
+  var valorEmReal = valorEmDolar * 9.461e+12;
   console.log(valorEmReal);
 
-  var valorConvertido = "O valor convertido em real é R$ " + valorEmReal;
+  var valorConvertido = "A estrela está localizada a " + valorEmReal + " km";
   elementovalorConvertido.innerHTML = valorConvertido;
 }
 
