@@ -11,3 +11,10 @@ function Converter(){
   var valorConvertido = "O valor convertido em real é R$ " + valorEmReal;
   elementovalorConvertido.innerHTML = valorConvertido;
 }
+
+var elementoMenu = document.querySelector('[data-icone-menu]');
+
+elementoMenu.addEventListener('click', () => {
+  const body = document.querySelector('.menu-container')
+  body.classList.toggle('show')
+})
