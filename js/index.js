@@ -1,4 +1,8 @@
 function Converter(){
+  const dolar = 5.34;
+  const euro = 6.26;
+  const iene = 0.048;
+
   var valorElemento = document.querySelector('#valor');
   var valor = valorElemento.value
   var elementovalorConvertido = document.querySelector('#valorConvertido');
@@ -9,13 +13,27 @@ function Converter(){
     return;
   }
 
-  var valorEmDolar = parseFloat(valor)
-  console.log(valorEmDolar);
+  var valorInput = parseFloat(valor)
 
-  var valorEmReal = valorEmDolar * 5;
+  var select = document.querySelector('[data-moeda]')
+  console.log(select.value);
+
+  var valorEmReal
+  switch(select.value){
+    case "dolar":
+      valorEmReal = valorInput * dolar;
+      break;
+    case "euro":
+      valorEmReal = valorInput * euro;
+      break;
+    case "iene":
+      valorEmReal = valorInput * iene;
+      break;
+  }
+  
   console.log(valorEmReal);
 
-  var valorConvertido = "O valor convertido em real é R$ " + valorEmReal;
+  var valorConvertido = "O valor convertido em real é R$ " + valorEmReal.toFixed(2).replace('.',',');
   elementovalorConvertido.innerHTML = valorConvertido;
 }
 
