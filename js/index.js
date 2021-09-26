@@ -3,8 +3,8 @@ function Converter(){
   var valor = valorElemento.value
   var elementovalorConvertido = document.querySelector('#valorConvertido');
 
-  if(valor === ''){
-    var valorConvertido = "Por favor, digite um valor";
+  if((valor === '') || (valor < 0)){
+    var valorConvertido = "Por favor, digite um valor válido";
     elementovalorConvertido.innerHTML = valorConvertido;
     return;
   }
